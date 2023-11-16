@@ -1,0 +1,119 @@
+movie_id,title,industry,release_year,imdb_rating,studio,language_id,budget,revenue,unit,currency
+101,K.G.F: Chapter 2,Bollywood,2022,8.4,Hombale Films,3,1,12.5,Billions,INR
+102,Doctor Strange in the Multiverse of Madness,Hollywood,2022,7,Marvel Studios,5,200,954.8,Millions,USD
+103,Thor: The Dark World,Hollywood,2013,6.8,Marvel Studios,5,165,644.8,Millions,USD
+104,Thor: Ragnarok,Hollywood,2017,7.9,Marvel Studios,5,180,854,Millions,USD
+105,Thor: Love and Thunder,Hollywood,2022,6.8,Marvel Studios,5,250,670,Millions,USD
+106,Sholay,Bollywood,1975,8.1,United Producers,1,Not Available,Not Available,Not Available,Not Available
+107,Dilwale Dulhania Le Jayenge,Bollywood,1995,8,Yash Raj Films,1,400,2000,Millions,INR
+108,3 Idiots,Bollywood,2009,8.4,Vinod Chopra Films,1,550,4000,Millions,INR
+109,Kabhi Khushi Kabhie Gham,Bollywood,2001,7.4,Dharma Productions,1,390,1360,Millions,INR
+110,The Galactic Odyssey,Sci-Fi,2023,7.5,Starlight Studios,5,120,280,Millions,USD
+111,Mystical Creatures,Fantasy,2023,6.9,Enchanting Films,4,80,150,Millions,USD
+112,Secrets of the Abyss,Adventure,2021,8.2,Cinematic Adventures,5,90,210,Millions,USD
+113,Eternal Echoes,Romance,2023,7.1,Romantic Dreams,1,60,120,Millions,USD
+114,Rogue Agents,Action,2022,6.5,ThunderStrike Productions,5,150,320,Millions,USD
+115,Lost in Time,Adventure,2022,7.8,Timeless Pictures,2,70,180,Millions,USD
+116,Space Serenade,Sci-Fi,2021,7.3,Cosmic Studios,5,110,250,Millions,USD
+117,Whispers in the Wind,Drama,2023,8.5,Serene Films,1,30,90,Millions,USD
+118,Midnight Masquerade,Mystery,2022,7,Enigma Entertainment,3,45,110,Millions,USD
+119,Legacy of Legends,Action,2023,8,Epic Productions,5,200,480,Millions,USD
+120,Enchanted Symphony,Animation,2022,7.6,Magical Studios,4,75,160,Millions,USD
+121,Whirlwind of Wonders,Comedy,2021,6.7,Joyful Pictures,2,40,95,Millions,USD
+122,Chronicles of Celestia,Fantasy,2022,7.9,Ethereal Studios,5,130,310,Millions,USD
+123,The Silent Symphony,Drama,2023,8.3,Serene Films,1,25,80,Millions,USD
+124,Infinite Horizons,Sci-Fi,2022,7.6,Cosmic Productions,5,95,220,Millions,USD
+125,Whispering Shadows,Thriller,2023,7.2,Shadowcraft Films,3,55,130,Millions,USD
+126,Stardust Serenade,Romance,2022,8,Starstruck Entertainment,1,70,180,Millions,USD
+127,Quantum Quandary,Sci-Fi,2021,7.4,Paradox Pictures,5,85,200,Millions,USD
+128,Moonlit Melodies,Musical,2023,7.7,Harmony Productions,1,50,120,Millions,USD
+129,Perilous Pursuit,Action,2022,6.8,Danger Zone Films,5,180,380,Millions,USD
+130,Whimsical Whodunit,Mystery,2021,7.1,Sleuth Studios,3,45,110,Millions,USD
+131,Heartstrings Harmony,Romance,2023,8.2,LoveLane Films,1,65,150,Millions,USD
+132,Supernova Secrets,Sci-Fi,2022,7.5,Astral Studios,5,110,260,Millions,USD
+133,Realm of Riddles,Mystery,2021,7,Puzzle Productions,3,55,125,Millions,USD
+134,Neon Nights,Thriller,2023,7.8,Shadowplay Films,5,75,180,Millions,USD
+135,Lunar Legends,Fantasy,2022,8.1,Moonlight Studios,4,90,220,Millions,USD
+136,Whistleblower,War,2021,6.5,Battlefront Films,5,200,420,Millions,USD
+137,Quantum Quest,Sci-Fi,2023,7.6,Infinity Entertainment,5,120,290,Millions,USD
+138,Serendipity Springs,Romance,2022,8.3,LoveStory Productions,1,60,150,Millions,USD
+139,Rogue Run,Thriller,2021,6.9,Adrenaline Rush Films,5,150,320,Millions,USD
+140,Cosmic Cascade,Sci-Fi,2023,7.4,Cosmos Studios,5,100,240,Millions,USD
+141,Blazing Trails,Western,2022,7.2,Frontier Films,5,80,170,Millions,USD
+142,Moonlit Masquerade,Mystery,2021,7.5,Mystique Productions,3,50,115,Millions,USD
+143,Whispers in the Dark,Horror,2023,6.8,Chill Studios,4,65,140,Millions,USD
+144,Enigma's Embrace,Drama,2022,8,Mystery Mindset Films,1,35,100,Millions,USD
+145,Sonic Symphony,Animation,2021,7.7,WhizKid Studios,4,70,160,Millions,USD
+146,Starlight Sonata,Musical,2023,8.5,Harmonic Heights,1,55,130,Millions,USD
+147,Neptune's Nexus,Adventure,2022,7.3,Seafarer Productions,5,95,210,Millions,USD
+148,Ethereal Echoes,Fantasy,2021,8.2,Dreamscape Films,4,85,200,Millions,USD
+149,Whirlwind Romance,Romance,2023,7.9,LoveStorm Productions,1,75,180,Millions,USD
+150,Midnight Mirage,Thriller,2022,7.1,Mystique Films,5,110,250,Millions,USD
+151,Rogue Raiders,Action,2021,6.6,Thunderstrike Films,5,180,380,Millions,USD
+152,Whispering Woods,Horror,2023,6.9,Eerie Entertainment,4,60,130,Millions,USD
+153,Lost Legends,Fantasy,2022,7.8,Mythic Movies,4,95,220,Millions,USD
+154,Starry Serenade,Musical,2021,8.1,Harmony Haven,1,50,120,Millions,USD
+155,Quantum Quandaries,Sci-Fi,2023,7.5,Paradoxical Productions,5,125,280,Millions,USD
+156,Marvelous Melodies,Musical,2022,7.7,Celestial Studios,1,55,140,Millions,USD
+157,Whimsical Wonders,Comedy,2021,6.8,Joyful Journeys,2,40,100,Millions,USD
+158,Chronicles of Chaos,Adventure,2023,8.4,Epic Expeditions,5,110,260,Millions,USD
+159,Lunar Lullaby,Animation,2022,7.3,DreamWorks Delight,4,75,160,Millions,USD
+160,Whistleblower's War,War,2021,6.5,Warrior Films,5,190,400,Millions,USD
+161,Quantum Quandary 2,Sci-Fi,2023,7.7,Paradoxical Sequels,5,130,310,Millions,USD
+162,Ethereal Enigma,Mystery,2022,7.1,Mystery Makers,3,50,115,Millions,USD
+163,Whispers of War,War,2021,6.6,Battlefront Studios,5,200,420,Millions,USD
+164,Starlight Symphony,Musical,2023,8.2,Harmony Heights,1,55,130,Millions,USD
+165,Romantic Riddles,Mystery,2022,7,Puzzle Pictures,3,55,125,Millions,USD
+166,Neon Nostalgia,Thriller,2021,7.8,Shadowplay Studios,5,75,180,Millions,USD
+167,Lunar Legends,Fantasy,2023,8.1,Moonlight Magic,4,90,220,Millions,USD
+168,Whistleblower's End,War,2022,6.5,Warrior Productions,5,190,400,Millions,USD
+169,Quantum Quandaries 3,Sci-Fi,2021,7.6,Paradoxical Conclusions,5,120,290,Millions,USD
+170,Moonlit Memories,Romance,2023,8.3,LoveStory Legends,1,60,150,Millions,USD
+171,Stardust Soiree,Romance,2022,8,Celestial Romance,1,65,160,Millions,USD
+172,Quantum Quasar,Sci-Fi,2023,7.5,Astral Adventures,5,110,260,Millions,USD
+173,Spectral Shadows,Horror,2021,6.8,Mystic Frights,4,70,140,Millions,USD
+174,Whimsical Whirlwind,Comedy,2023,7.1,Joyful Jesters,2,45,110,Millions,USD
+175,Echoes of Eternity,Fantasy,2022,7.9,Dreamscape Dreams,4,80,190,Millions,USD
+176,Silent Symphony II,Drama,2021,8.3,Serene Sequels,1,30,90,Millions,USD
+177,Lost in Limbo,Adventure,2023,7.5,Realm Roamers,5,95,210,Millions,USD
+178,Whispering Willows,Horror,2022,6.9,Eerie Enchantments,4,55,120,Millions,USD
+179,Starlight Sonata II,Musical,2021,8.5,Harmonic Heights,1,50,125,Millions,USD
+180,Moonlit Mosaic,Animation,2023,7.7,Cosmic Cartoons,4,70,160,Millions,USD
+181,Enigma's Return,Drama,2022,8,Mystery Mindset Films,1,35,100,Millions,USD
+182,Sonic Symphony II,Musical,2021,7.7,WhizKid Studios,4,55,135,Millions,USD
+183,Neon Nights II,Thriller,2023,7.8,Shadowplay Sequels,5,75,180,Millions,USD
+184,Lunar Legends II,Fantasy,2022,8.1,Moonlight Magic,4,90,220,Millions,USD
+185,Whistleblower's Legacy,War,2021,6.5,Warrior Productions,5,200,420,Millions,USD
+186,Quantum Quest II,Sci-Fi,2023,7.6,Infinity Entertainments,5,120,290,Millions,USD
+187,Whispers in the Dark II,Horror,2022,6.8,Chill Sequels,4,65,140,Millions,USD
+188,Ethereal Echoes II,Fantasy,2021,8.2,Dreamscape Films,4,85,200,Millions,USD
+189,Whirlwind of Wonders II,Comedy,2023,6.7,Joyful Pictures,2,40,95,Millions,USD
+190,Chronicles of Celestia II,Fantasy,2023,7.9,Ethereal Studios,5,130,310,Millions,USD
+191,The Silent Symphony III,Drama,2021,8.3,Serene Films,1,25,80,Millions,USD
+192,Infinite Horizons II,Sci-Fi,2022,7.6,Cosmic Productions,5,95,220,Millions,USD
+193,Whispering Shadows II,Thriller,2023,7.2,Shadowcraft Films,3,55,130,Millions,USD
+194,Eternal Echoes II,Romance,2022,7.1,Romantic Dreams,1,60,120,Millions,USD
+195,Rogue Agents II,Action,2021,6.5,ThunderStrike Productions,5,150,320,Millions,USD
+196,Lost in Time II,Adventure,2021,7.8,Timeless Pictures,2,70,180,Millions,USD
+197,Space Serenade II,Sci-Fi,2023,7.3,Cosmic Studios,5,110,250,Millions,USD
+198,Whispers in the Wind II,Drama,2022,8.5,Serene Films,1,30,90,Millions,USD
+199,Midnight Masquerade II,Mystery,2023,7,Enigma Entertainment,3,45,110,Millions,USD
+200,Legacy of Legends II,Action,2022,8,Epic Productions,5,200,480,Millions,USD
+201,Enchanted Symphony II,Animation,2021,7.6,Magical Studios,4,75,160,Millions,USD
+202,Whirlwind of Wonders III,Comedy,2023,6.7,Joyful Pictures,2,40,95,Millions,USD
+203,Chronicles of Celestia III,Fantasy,2023,7.9,Ethereal Studios,5,130,310,Millions,USD
+204,The Silent Symphony IV,Drama,2021,8.3,Serene Films,1,25,80,Millions,USD
+205,Infinite Horizons III,Sci-Fi,2022,7.6,Cosmic Productions,5,95,220,Millions,USD
+206,Whispering Shadows III,Thriller,2023,7.2,Shadowcraft Films,3,55,130,Millions,USD
+207,Eternal Echoes III,Romance,2022,7.1,Romantic Dreams,1,60,120,Millions,USD
+208,Rogue Agents III,Action,2021,6.5,ThunderStrike Productions,5,150,320,Millions,USD
+209,Lost in Time III,Adventure,2021,7.8,Timeless Pictures,2,70,180,Millions,USD
+210,Space Serenade III,Sci-Fi,2023,7.3,Cosmic Studios,5,110,250,Millions,USD
+211,Whispers in the Wind III,Drama,2022,8.5,Serene Films,1,30,90,Millions,USD
+212,Midnight Masquerade III,Mystery,2023,7,Enigma Entertainment,3,45,110,Millions,USD
+213,Legacy of Legends III,Action,2022,8,Epic Productions,5,200,480,Millions,USD
+214,Enchanted Symphony III,Animation,2021,7.6,Magical Studios,4,75,160,Millions,USD
+215,Whirlwind of Wonders IV,Comedy,2023,6.7,Joyful Pictures,2,40,95,Millions,USD
+216,Chronicles of Celestia IV,Fantasy,2023,7.9,Ethereal Studios,5,130,310,Millions,USD
+217,The Silent Symphony V,Drama,2021,8.3,Serene Films,1,25,80,Millions,USD
+218,Infinite Horizons IV,Sci-Fi,2022,7.6,Cosmic Productions,5,95,220,Millions,USD
