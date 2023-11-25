@@ -1,3 +1,4 @@
+// ---------------------- search.ipynb ---------------------- //
 import os
 import streamlit as st
 import pickle
@@ -89,3 +90,80 @@ UnstructuredURLLoader: This class is also from the Langchain library and is used
 OpenAIEmbeddings: Langchain provides this class for generating embeddings using the OpenAI language model. Embeddings are vector representations of text that capture semantic information.
 
 FAISS: FAISS (Facebook AI Similarity Search) is a library for efficient similarity search and clustering of dense vectors. In this code, it's used to create a vector store from the document embeddings, allowing for fast and efficient retrieval of similar documents.
+
+// text_splitter.ipynb
+
+# FAISS: Facebook AI Similarity Search
+# Semantic search and not keyword search
+# Use case: To search embeddings of multimedia docs similar to each other
+
+# Install necessary packages
+!pip install faiss-cpu
+!pip install sentence_transformers
+
+# Import required libraries
+import pandas as pd
+import numpy as np
+import faiss
+from sentence_transformers import SentenceTransformer
+
+# Set display options for pandas DataFrame
+pd.set_option('display.max_colwidth', 100)
+
+# Read data from CSV
+df = pd.read_csv('text.csv')
+df.shape  # Display the shape of the DataFrame
+df.head()  # Display the first few rows of the DataFrame
+
+# Create source embeddings for the text column using SentenceTransformer
+encoder = SentenceTransformer("all-mpnet-base-v2")
+vector_result = encoder.encode(df.text)
+
+# Display shape and content of the resulting vectors
+vector_result.shape
+vector_result
+
+# Define the size of each vector
+size = vector_result.shape[1]
+
+# Create a FAISS Index DB for vector storage
+index_db = faiss.IndexFlatL2(size)
+
+# Normalize the source vectors and add them to the index
+index_db.add(vector_result)
+
+# Display the created index
+index_db
+
+# Encode the search text using the same encoder and normalize the output vector
+query = "I like attending concerts."
+vector = encoder.encode(query)
+
+# Display the shape and content of the search vector
+vector.shape
+vector
+
+# Convert the 1D array to a 2D array
+m_vec = np.array(vector).reshape(1, -1)
+
+# Display the shape and content of the converted vector
+m_vec.shape
+m_vec
+
+# Search for similar vectors in the FAISS index
+dist, idx = index_db.search(m_vec, k=4)
+
+# Display the search results (distance and index in the main DataFrame)
+dist, idx
+
+# Convert the index to a list
+idx_rows = idx.tolist()[0]
+
+# Display the list of index rows
+idx_rows
+
+# Locate and display the rows in the DataFrame corresponding to the search results
+df.loc[idx_rows]
+
+# Display the original query
+query
