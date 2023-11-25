@@ -1,0 +1,91 @@
+import os
+import streamlit as st
+import pickle
+import langchain
+from langchain import OpenAI
+from langchain.chains import RetrievalQAWithSourcesChain
+from langchain.chains.qa_with_sources.loading import load_qa_with_sources_chain
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.document_loaders import UnstructuredURLLoader
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
+
+# Set OpenAI API key (replace 'api_key' with your actual key)
+os.environ["OPENAI_API_KEY"] = 'api_key'
+
+# Instantiate the OpenAI language model
+llm = OpenAI(temperature=0.9, max_tokens=500)
+
+# Load unstructured data from specified URLs
+news = UnstructuredURLLoader(urls=[
+    "https://www.moneycontrol.com/news/politics/ipef-nations-conclude-talk-on-clean-economy-agreement-proposes-members-to-work-on-sustainable-measures-11757861.html",
+    "https://www.moneycontrol.com/news/cricket/icc-world-cup-2023-australia-edge-south-africa-and-will-play-india-in-final-11757771.html"
+])
+
+# Load data into a DataFrame
+df = news.load()
+
+# Text splitting
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=1000,
+    chunk_overlap=200
+)
+
+# Split data into documents using the text splitter
+docs = text_splitter.split_documents(df)
+
+# Create embeddings for the chunks and save them to a FAISS index
+embeddings = OpenAIEmbeddings()
+vectorindex_openai = FAISS.from_documents(docs, embeddings)
+
+# Storing vector index created in a local pickle file
+file_path = "vector_idx.pkl"
+with open(file_path, "wb") as f:
+    pickle.dump(vectorindex_openai, f)
+
+# Check if the file exists and load the vector index
+if os.path.exists(file_path):
+    with open(file_path, "rb") as f:
+        vectorIndex = pickle.load(f)
+
+# Create a retrieval chain from the OpenAI language model and the vector index
+chain = RetrievalQAWithSourcesChain.from_llm(llm=llm, retriever=vectorIndex.as_retriever())
+
+# Define a question for retrieval
+query = "When was IPEF launched jointly by the US?"
+
+# Enable debugging for additional information (optional)
+langchain.debug = True
+
+# Use the retrieval chain to get the answer and sources
+result = chain({"question": query}, return_only_outputs=True)
+
+# Display the result (this part is for your reference, you can remove it if needed)
+print(result)
+
+
+// ----------------- main.py ------------------- //
+
+os: The os module provides a way to interact with the operating system. In this code, it's used for checking the existence of a file path.
+
+streamlit (as st): Streamlit is a Python library for creating web applications with minimal effort. It's used here to create a simple web interface for the LLM (Language Model) search tool.
+
+pickle: The pickle module is used for serializing and deserializing Python objects. In this code, it's used to save and load the FAISS index, which is a data structure for efficient similarity search and clustering of vectors.
+
+time: The time module provides various time-related functions. In this code, it's used to introduce a delay with time.sleep(2) to simulate a pause during the process.
+
+langchain: Langchain is a library for building and using language models. It includes functionality for text splitting, document loading, embeddings, vector stores (like FAISS), and more. In this code, it's used to work with the OpenAI language model, create embeddings, and build a FAISS index.
+
+dotenv: dotenv is used for loading environment variables from a file named .env. In this code, it's particularly used to load sensitive information such as the OpenAI API key.
+
+OpenAI: OpenAI is a research organization that provides powerful language models. The OpenAI class is used to instantiate an instance of the OpenAI language model.
+
+RetrievalQAWithSourcesChain: This is a part of the Langchain library and represents a chain of components for retrieval-based question-answering with sources. It's configured to work with the OpenAI language model and a vector store (FAISS) in this code.
+
+RecursiveCharacterTextSplitter: Another part of the Langchain library, this class is used for splitting text into chunks based on specified separators. It's employed here to split the loaded data into smaller documents.
+
+UnstructuredURLLoader: This class is also from the Langchain library and is used to load unstructured data from URLs.
+
+OpenAIEmbeddings: Langchain provides this class for generating embeddings using the OpenAI language model. Embeddings are vector representations of text that capture semantic information.
+
+FAISS: FAISS (Facebook AI Similarity Search) is a library for efficient similarity search and clustering of dense vectors. In this code, it's used to create a vector store from the document embeddings, allowing for fast and efficient retrieval of similar documents.
